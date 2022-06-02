@@ -162,6 +162,7 @@ body{
 .contact-link {
     display: flex;
     align-items: center;
+    transition: color 250ms var(--cubic-beziez);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -216,6 +217,8 @@ body{
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+
+    transition: background-color 250ms var(--cubic-beziez);
 
 }
 .hero-button:hover{
@@ -412,6 +415,9 @@ body{
     align-items: center;
     border-radius: 50%;
     color: var(--social-icon-color);
+
+    transition: background-color 250ms var(--cubic-beziez),
+    color 250ms var(--cubic-beziez);
 }
 .social-icon-link:hover,
 .social-icon-link:focus {
@@ -464,6 +470,9 @@ body{
     color: var(--social-icon-color);
     border: 1px solid var(--social-icon-color);
     border-radius: 4px;
+
+    transition: color 250ms var(--cubic-beziez),
+     border 250ms var(--cubic-beziez);
  }
  .link-client-logo:hover,
  .link-client-logo:focus{
@@ -512,16 +521,16 @@ color:var(--logo-footer-color);
     width: 100%;
     margin-bottom: 9px;
 }
-.contact-footer a {
+.contact-footer-link {
     color: var(--contact-footer-color);
     text-decoration: none;
+
+    transition: color 250ms var(--cubic-beziez) ;
 }
-.contact-footer a:hover {
+.contact-footer-link:hover, .contact-footer-link:focus {
     color: var(--accent-color);
 }
-.contact-footer a:focus {
-    background-color:var(--focus-back-color);
-}
+
 .contact-footer{
     list-style-type: none;
     margin-top: 0;
@@ -587,6 +596,10 @@ color:var(--logo-footer-color);
 
     border-radius: 4px;
     border: none;
+
+    transition: background-color 250ms var(--cubic-beziez),
+    color 250ms var(--cubic-beziez), 
+    box-shadow 250ms var(--cubic-beziez);
 }
 .button-list {
     margin-top: 0;
@@ -601,9 +614,6 @@ color:var(--logo-footer-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-
-    transition: background-color 250ms var(--cubic-beziez),
-    color 250ms var(--cubic-beziez), box-shadow 250ms var(--cubic-beziez) ;
 }
 .button-list button:focus{
     cursor: pointer;
