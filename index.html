@@ -36,11 +36,16 @@
     </header>
 <!-- main -->
 <main>
-        <!-- Ефективні рішення для вашого бізнесу -->
+        <!-- Герой -->
         <section class="hero overlay">
             <div class="container">
                 <H1>Ефективні рішення для <br>вашого бізнесу</H1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button class="hero-button" data-modal-open type="button">Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="button-close" data-modal-close>X</button>
+                </div>
             </div>
         </section>
 
@@ -310,7 +315,7 @@
         </div>
     </div>
 </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
