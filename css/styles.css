@@ -116,7 +116,7 @@ body{
     transition: color 250ms var(--cubic-beziez);
 }
 .site-nav a:focus{
-    background-color: var(--focus-back-color);
+   color: var(--accent-color);
     transition: color 250ms var(--cubic-beziez);
 }
 .site-nav .item{
@@ -124,8 +124,9 @@ body{
     width: calc((100% - 100px)/3);
     margin-right: 50px;
 }
-.current-link {
+.site-nav .current-link {
     position: relative;
+    color: var(--accent-color);
 }
 .site-nav .current-link::after{
     content: "";
